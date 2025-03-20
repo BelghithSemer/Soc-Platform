@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %}
+<div class="home-header-section">
+    <figure class="banner-right-img left_icon img">
+        <img src="assets/images/header-right-img.png" alt="" class="star">
+    </figure>
+    <header class="header">
+        <div class="main-header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <img src="{% static 'cyberix.svg' %}" alt="2" class="img-fluid diverge-logo" style="width: 70px; height: auto;"><h5 class="mb-0 ml-2 text-white">Cyberix</h5>
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-decoration-none navbar-text-color home-margin-top" href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-decoration-none navbar-text-color" href="{% url 'about' %}">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-decoration-none navbar-text-color" href="{% url 'contact' %}">Contact Us<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    
+                                   
+                                </ul>
+                                <div class="btn-talk ml-auto">
+                                    <ul class="m-0 p-0">
+                                        <li class="list-unstyled d-lg-inline-block active"><a class="nav-link contact" href="{% url 'login' %}">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- BANNER-SECTION -->
+    <div class="home-banner-section overflow-hidden position-relative sub-banner-section">
+        <div class="banner-container-box">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <div class="sub-banner-outer">
+                        <h1>Contact Us</h1>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="contact-page-section">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
+             <div class="offer-section-box">
+                 <div class="offer-section-inner">
+                     <figure>
+                         <img src="{% static 'assets/images/contact-page-img1.png' %}" alt="">
+                     </figure>
+                 </div>
+                 <h5>Phone:</h5>
+                <a href="tel:+61383766284" class="text-decoration-none"> <p class="phone-p">+216 20 200 200</p></a>
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
+             <div class="offer-section-box">
+                 <div class="offer-section-inner">
+                     <figure>
+                         <img src="{% static 'assets/images/contact-page-img2.png' %}" alt="">
+                     </figure>
+                 </div>
+                 <h5>Email:</h5>
+                <a href="mailto:info@whizcyber.com" class="text-decoration-none"><p>info@cyberix.com
+                 support@cyberix.com</p></a> 
+             </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-0">
+             <div class="offer-section-box">
+                 <div class="offer-section-inner">
+                    <figure>
+                        <img src="{% static 'assets/images/contact-page-img3.png' %}" alt="">
+                    </figure>
+                 </div>
+                 <h5>Location:</h5>
+                 <p>Centre Urbain Nord , Tunis </p>
+             </div>
+         </div>
+     </div>
+    </div>
+ </div>
+ <!-- Form-Section -->
+ <section class="contact-us-form">
+     <figure class="about-left-back-img">
+         <img src="{% static 'assets/images/contact-before-img.png' %}" alt="" class="star">
+     </figure>
+     <div class="container text-center">
+        <div class="row">
+         <div class="col-12">
+             <h6 class="autorix-text text-center">Get Started Now</h6>
+             <h2 class="text-center aos-init aos-animate" data-aos="fade-left">Send us a Message</h2>
+         </div>
+        </div>
+         <form id="form_id" method="post" action="https://html.designingmedia.com/whizcyber/contact-form.php">
+             <div class="contact-us-wrapper">
+                 <div class="row">
+                     <div class="col-lg-4 col-md-4 col-sm-12">
+                         <div class="">
+                             <input type="text" name="name" class="form-control input-fill" placeholder="Name">
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-4 col-sm-12">
+                         <div class="">
+                             <input type="text" name="phone" class="form-control input-fill" placeholder="Phone">
+                         </div>
+                     </div>
+                     <div class="col-lg-4 col-md-4 col-sm-12">
+                         <div class="col-inner">
+                             <input type="tel" name="email" class="form-control input-fill" placeholder="Email">
+                         </div>
+                     </div>
+
+                 </div>
+                 <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12">
+                         <div class="col-inner-msg">
+                             <textarea name="comments" rows="3" placeholder="Message" class="form-control border-none"></textarea>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="form-btn">
+                     <button type="submit" class="btn btn-primary">Submit Now</button>
+                 </div>
+             </div>
+         </form>
+     </div>
+ </section>
+{% endblock %}

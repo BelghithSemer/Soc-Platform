@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+   <!-- HEADER-SECTION -->
+   <div class="home-header-section">
+    <figure class="banner-right-img left_icon img">
+        <img src="{% static 'assets/images/header-right-img.png' %}" alt="" class="star">
+    </figure>
+    <header class="header">
+        <div class="main-header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <a class="navbar-brand pt-0 d-flex align-items-center" href="index.html" style="text-decoration: none;">
+                        <img src="{% static 'cyberix.svg' %}" alt="Cyberix Logo" class="img-fluid diverge-logo" style="width: 70px; height: auto;">
+                        <h5 class="mb-0 ml-2 text-white">Cyberix</h5>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link text-decoration-none navbar-text-color home-margin-top" href="{% url 'home' %}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none navbar-text-color" href="about.html">About Us<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none navbar-text-color" href="services.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                        <div class="btn-talk ml-auto">
+                            <ul class="m-0 p-0">
+                                <li class="list-unstyled d-lg-inline-block"><a class="nav-link contact" href="{% url 'register' %}">Start Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- BANNER-SECTION -->
+    <div class="home-banner-section overflow-hidden position-relative sub-banner-section">
+        <div class="banner-container-box">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sub-banner-outer">
+                            <h1>About Cyberix</h1>
+                            <p>Cyberix is a cutting-edge cybersecurity platform designed to monitor, detect, and respond to threats in real-time. Built by Assurance Carte (Tunisienne), we ensure 24/7 protection for your digital assets.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <!-- About-Us-SECTION -->
+    <section class="about-us-section about-us-page-section overflow-hidden position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 order-lg-1 order-2">
+                    <figure class="about-section-f1"><img src="{% static 'assets/images/about-page-left-img.png' %}" alt="Cyberix Dashboard" class="img-fluid"></figure>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <figure class="mb-0 about-section-f2"><img src="{% static 'assets/images/about-page-img2.png' %}" alt="Threat Monitoring" class="img-fluid"></figure>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <figure class="mb-0 about-section-f2"><img src="{% static 'assets/images/about-page-img3.png' %}" alt="Vulnerability Detection" class="img-fluid"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 order-lg-2 order-2">
+                    <div class="about-us-content aos-init aos-animate" data-aos="fade-up">
+                        <h6 class="autorix-text">About Us</h6>
+                        <h2 data-aos="fade-zoom-in" class="aos-init aos-animate">24/7 Cyber Security Operation Center</h2>      
+                        <p class="aboutus-p">Cyberix is a state-of-the-art cybersecurity platform designed to monitor, detect, and respond to threats in real-time. By integrating with tools like Hive and Wazuh, Cyberix provides a centralized dashboard for managing vulnerabilities, alerts, and attacks.</p> 
+                        <ul class="list-unstyled list-margin-bottom">
+                            <li class="d-inline-block mb-lg-0 mb-3"><i class="fa-solid fa-check ml-0"></i><span class="d-inline-block email-span text-decoration-none list-span">Real-Time Threat Monitoring</span></li>
+                            <li class="d-inline-block cloud-security-li"><i class="fa-solid fa-check margin-left-checkk"></i><span class="d-inline-block user-span text-decoration-none list-span">Vulnerability Detection</span></li>
+                            <li class="d-inline-block mb-lg-0 mb-3"><i class="fa-solid fa-check ml-0"></i><span class="d-inline-block email-span text-decoration-none list-span">Alert Management</span></li>
+                            <li class="d-inline-block user-li threat-detection-li"><i class="fa-solid fa-check margin-left-checkk"></i><span class="d-inline-block user-span text-decoration-none list-span">Integration with Hive & Wazuh</span></li>                           
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="pricing-plan-section whychooseus-section overflow-hidden">
+        <figure class="about-left-back-img">
+            <img src="{% static 'assets/images/why-choose-left-img.png' %}" alt="" class="star">
+        </figure>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6>Why Choose Us?</h6>
+                    <h2 class="text-center">3 Benefits of Cyberix</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-md-4 mb-sm-4 mb-0">
+                    <div class="services-content" data-aos="fade-up">
+                        <div class="icons-rounded-box">
+                            <figure class="mb-0"><img src="{% static 'assets/images/whychoseus-img1.png' %}" alt="Real-Time Monitoring">
+                            </figure>
+                        </div>
+                        <h5 class="pricing-plan-color mb-0">Real-Time Monitoring</h5>
+                        <p>Cyberix provides 24/7 real-time monitoring of your systems to detect and respond to threats instantly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="services-content" data-aos="fade-up">
+                        <div class="icons-rounded-box">
+                            <figure class="mb-0"><img src="{% static 'assets/images/whychoseus-img2.png' %}" alt="Vulnerability Detection">
+                            </figure>
+                        </div>
+                        <h5 class="pricing-plan-color mb-0">Vulnerability Detection</h5>
+                        <p>Identify and address vulnerabilities before they can be exploited by attackers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="services-content pro-card" data-aos="fade-up">
+                        <div class="icons-rounded-box">
+                            <figure class="mb-0"><img src="{% static 'assets/images/whychoseus-img3.png' %}" alt="Alert Management">
+                            </figure>
+                        </div>
+                        <h5 class="pricing-plan-color mb-0">Alert Management</h5>
+                        <p>Receive and manage alerts from integrated tools like Hive and Wazuh in one centralized dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+{% endblock %}
